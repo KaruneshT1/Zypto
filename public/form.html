@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="assets/css/form_styles.css">
+</head>
+<body>
+    <h2>Sign In To Validate Delivery</h2>
+    <form id="loginForm">
+        <input type="text" id="username" name="username" placeholder="Enter a Username" required><br><br>
+        <input type="email" id="mail" name="mail" placeholder="Enter Email Id" required><br><br>
+        <input type="password" id="password" name="password" placeholder="Enter a password" required><br><br>
+        <input type="submit" value="Sign">
+    </form>
+
+    <script>
+        document.getElementById("loginForm").addEventListener("submit", function(event) {
+            let username = document.getElementById("username").value;
+            let mail = document.getElementById("mail").value;
+            let password = document.getElementById("password").value;
+
+            let pattern = /^[a-zA-Z0-9]+$/;
+
+            let password_pattern = /^[a-zA-Z0-9]+[!@#$%^&**()_+{}?/<>,.;]+$/;
+
+            if ( !pattern.test(username) || !password_pattern.test(password) ) {
+                alert("Invalid username. Only alphanumeric characters are allowed.");
+                event.preventDefault();
+            }
+
+            if (!password_pattern.test(password)) {
+                alert("Try to include a special character.");
+                event.preventDefault();
+            }
+        });
+    </script>
+</body>
+</html>

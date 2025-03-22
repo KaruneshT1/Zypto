@@ -1,0 +1,398 @@
+.navbar-brand {
+    font-weight: bold;
+    color: #a325e2 ;
+}
+
+body {
+    padding-top: 80px; /* Prevent content overlap due to fixed navbar */
+}
+
+/* Navbar Height */
+.navbar {
+    height: 90px; /* Adjust height as needed */
+}
+
+/* Adjust spacing for the logo */
+.logo {
+    font-size: 2rem;
+    margin-left: 50px ; /* Adjust left spacing */
+    margin-right: 20px; /* Adjust right spacing */
+    margin-top: 5px; /* Adjust top spacing */
+    margin-bottom: 5px; /* Adjust bottom spacing */
+}
+
+/* Adjust spacing for the Select Location button */
+.select-location-btn {
+    font-size: 13px;
+    font-weight: bold;
+    width: 140px;
+    margin-left: 15px; /* Adjust left spacing */
+    margin-right: 10px; /* Adjust right spacing */
+    margin-top: 5px; /* Adjust top spacing */
+    margin-bottom: 5px; /* Adjust bottom spacing */
+}
+
+/* Adjust spacing for the search bar */
+.search-bar {
+    width: 65%;
+    margin-left: 30px; /* Adjust left spacing */
+    margin-right: 10px; /* Adjust right spacing */
+    margin-top: 5px; /* Adjust top spacing */
+    margin-bottom: 5px; /* Adjust bottom spacing */
+}
+
+/* Adjust spacing for the Login button */
+.login-btn {
+    width: 55px;
+    height: auto;
+    margin-left: 15px; /* Adjust left spacing */
+    margin-right: 10px; /* Adjust right spacing */
+    margin-top: 5px; /* Adjust top spacing */
+    margin-bottom: 5px; /* Adjust bottom spacing */
+}
+
+/* Adjust spacing for the Cart button */
+.cart-btn {
+    width: 55px;
+    margin-left: 10px; /* Adjust left spacing */
+    margin-right: 10px; /* Adjust right spacing */
+    margin-top: 5px; /* Adjust top spacing */
+    margin-bottom: 5px; /* Adjust bottom spacing */
+}
+
+.navbar .btn {
+    border: none !important; /* Removes the border */
+    color: black !important; /* Sets the font color to black */
+    background-color: transparent; /* Keeps the background transparent */
+    margin: 0 10px;
+}
+
+/* Style for the advertisement section */
+.advertisement {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 225px; /* Adjust the height as needed */
+    margin: 20px auto; /* Automatically centers the advertisement section */
+    padding: 0 20px; /* Adds horizontal padding (gap from left and right sides) */
+    max-width: 1200px; /* Restrict the width of the advertisement section (adjust as needed) */
+    border-radius: 10px; /* Rounded corners for the advertisement */
+    overflow: hidden; /* Ensures the content respects rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional: Adds a soft shadow around the advertisement */
+}
+
+/* Style for the advertisement image */
+.advertisement img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain; /* Maintain aspect ratio */
+    border-radius: 90px; /* Ensure the image inside the advertisement section is also rounded */
+}
+
+
+
+.footer {
+    background-color: #f8f9fa;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #030303;
+    margin: 15px 0;
+}
+
+.popular-searches p {
+    font-size: 14px;
+}
+
+.container h6 {
+    margin-top: 10px;
+}
+
+.popular-searches a {
+    text-decoration: none;
+    color: #646464;
+}
+
+.popular-searches a:hover {
+    text-decoration: underline;
+}
+
+.categories .row {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.categories a {
+    text-decoration: none;
+    color: black;
+}
+
+.categories a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
+.footer-bottom {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.footer-columns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    gap: 20px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.footer-col {
+    text-align: left;
+}
+
+.footer-col h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.footer-col a {
+    display: block;
+    text-decoration: none;
+    color: #646464;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.footer-col a:hover {
+    text-decoration: underline;
+}
+
+
+.left {
+    width: 30%;
+}
+
+.social-icons {
+    display: flex;  /* Arrange icons in a row */
+    gap: 10px;      /* Adds space between icons */
+    margin-top: 10px; /* Space between "Zepto" and icons */
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+.social-icons a:hover {
+    color: #646464;
+}
+
+
+.right {
+    width: 70%;
+    text-align: right;
+}
+
+.links a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+    .footer {
+        text-align: center;
+    }
+}
+
+/* Image control options */
+img.responsive {
+    max-width: 100%;
+    height: auto;
+}
+
+img.fixed-size {
+    width: 100px; /* Example fixed width */
+    height: 100px; /* Example fixed height */
+}
+
+.product-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the content horizontally */
+    margin: 50px 0px 70px 120px;
+    padding: 0 20px; /* Add padding to the left and right sides to create a gap */
+    max-width: 1200px; /* Limit the width to prevent it from stretching too much */
+}
+
+/* Style for the category title */
+.product-section h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px; /* Space between the header and the product items */
+    color: #333; /* Customize the color as needed */
+    align-self: flex-start; /* Align the heading to the start of the section */
+    width: 100%; /* Ensure it spans the full width of the section */
+    text-align: left; /* Align the text to the left */
+}
+
+/* Product row style for product cards */
+.product-row {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping to the next line for small screens */
+    gap: 5px; /* Adjust this value to control the space between items */
+    padding: 5px; /* Padding between items */
+    width: 100%; /* Make sure the product row takes full width */
+}
+
+/* Carousel Styles */
+.product-carousel {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+
+.carousel-btn {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    position: absolute;
+    z-index: 1;
+}
+
+.carousel-btn.left {
+    left: 0;
+}
+
+.carousel-btn.right {
+    right: 0;
+}
+
+/* Card Styles */
+.card-img-top {
+    margin-left: 0 !important;
+    width: 75% !important; /* Adjust the width as needed (e.g., 80% of the card width) */
+    height: auto; /* Maintain the aspect ratio */
+    border: none; /* Remove border around the image */
+    border-radius: 10px; /* Add slight curve to the image corners */
+    object-fit: cover;
+}
+
+.card {
+    width: 250px; /* Adjust the width of the product box */
+    height: auto; /* Let the height adjust automatically */
+    margin: 5px;
+    border: none; /* Remove the border from the card */
+    border-radius: 10px; /* Slightly curve the corners of the card */
+    overflow: hidden; /* Ensure that the rounded corners are respected */
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card-body h5 {
+    font-size: 0.75rem; /* Reduce the font size */
+    font-weight: bold; /* Optional: Make the font bold */
+    font-family: 'Arial', sans-serif; /* Optional: Change the font */
+    margin-bottom: 5px; /* Add spacing below the name */
+    text-align: left; /* Align the price to the left */
+    margin-left: 0; /* Ensure no extra margin on the left */
+}
+
+.card-body p:first-of-type {
+    font-size: 0.75rem; /* Reduce the font size */
+    font-weight: 500;
+    color: #ffffff; /* Optional: Change the text color */
+    font-family: 'Verdana', sans-serif; /* Optional: Change the font */
+    margin-top: 25px;
+    margin-bottom: 10px; /* Add spacing below the description */
+    text-align: left; /* Align the price to the left */
+    margin-left: 0; /* Ensure no extra margin on the left */
+}
+
+/* Align the cost to the left */
+.card-body p:last-of-type {
+    font-size: 1rem; /* Adjust the font size for the price */
+    font-weight: bold; /* Make the price bold */
+    text-align: left; /* Align the price to the left */
+    margin-left: 0; /* Ensure no extra margin on the left */
+    color: #333; /* Optional: Change the text color */
+}
+
+/* Style for the product buttons */
+.card-body button {
+    margin-left: 0 !important;
+    width: 100% ; /* Make the button take the full width of the card */
+    max-width: 150px; /* Optional: Set a maximum width for the button */
+    max-height: 35px; /* Optional: Set a maximum height for the button */
+    margin: 0 auto; /* Center the button horizontally */
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center the text horizontally */
+    align-items: center; /* Center the text vertically */
+    text-align: center; /* Center the text inside the button */
+    padding: 10px; /* Add padding for better appearance */
+    font-size: 0.9rem; /* Adjust the font size */
+    background-color: white; /* Set the background to white */
+    color: crimson;
+    border: 2px solid crimson; /* Add a crimson border */
+    font-weight: bold; /* Make the text bold */
+    border-radius: 5px; /* Add rounded corners */
+    transition: all 0.3s ease; /* Add a smooth transition for hover effects */
+}
+
+/* Additional styling for the location dropdown button */
+.navbar .dropdown-toggle::after {
+    content: '\f107'; /* FontAwesome down arrow */
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    padding-left: 5px;
+}
+
+/* Style for the dropdown menu */
+#location-dropdown {
+    display: none;
+}
+
+.dropdown-menu {
+    position: absolute;
+    z-index: 1000;
+    display: none;
+    min-width: 10rem;
+}
+
+.dropdown-toggle:focus + .dropdown-menu {
+    display: block;
+}
+
+/* Adjust the modal */
+.modal-content {
+    border-radius: 10px;
+}

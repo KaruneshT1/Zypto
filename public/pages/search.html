@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zepto</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="icon" href="assets/icons/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css"> <!-- Updated to match your directory structure -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Fixed Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand logo" href="#">Zepto</a>
+            <!-- Updated Select Location Button with Down Arrow -->
+            <div class="dropdown">
+                <button class="btn btn-outline-primary me-3 select-location-btn" data-bs-toggle="modal" data-bs-target="#locationModal">
+                    Select Location <i class="fas fa-angle-down"></i>
+                </button>
+                <ul class="dropdown-menu" id="location-dropdown" class="form-control search-bar">
+                    <li><a class="dropdown-item" href="#">Location 1</a></li>
+                    <li><a class="dropdown-item" href="#">Location 2</a></li>
+                    <li><a class="dropdown-item" href="#">Location 3</a></li>
+                    <li><a class="dropdown-item" href="#">Location 4</a></li>
+                </ul>
+            </div>
+            <div class="input-group search-bar">
+                <span class="input-group-text bg-white border-end-0">
+                    <i class="fas fa-search"></i>
+                </span>
+                <input type="text" id="search-input" placeholder="Search for Cheese..." class="form-control border-start-0" onkeydown="searchItem(event)">
+            </div>
+            <div class="ms-auto">
+                <button class="btn btn-outline-secondary login-btn"> <i class="fas fa-user"></i> Login</button>
+                <button class="btn btn-outline-success cart-btn"><i class="fas fa-shopping-cart"></i> Cart</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Modal for Location Popup -->
+    <div class="modal fade" id="locationModal" tabindex="-1" aria-labelledby="locationModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="locationModalLabel">Select Location</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="locationInput" class="form-label">Location</label>
+                            <select class="form-select" id="locationInput">
+                                <option selected>Choose your location</option>
+                                <option value="1">Location 1</option>
+                                <option value="2">Location 2</option>
+                                <option value="3">Location 3</option>
+                                <option value="4">Location 4</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <hr>
+        <div class="container">
+            <!-- Popular Searches Section -->
+            <h6>Popular Searches</h6>
+            <div class="popular-searches">
+                <p><strong>Products:</strong> 
+                    <a href="#">Bottle gourd</a> | <a href="#">Lady finger</a> | <a href="#">Potato</a> | 
+                    <a href="#">Lemon</a> | <a href="#">Dalchini</a> | <a href="#">Fennel seeds</a> | 
+                    <a href="#">Blueberry</a> | <a href="#">Papaya</a> | <a href="#">Dragon fruit</a>
+                </p>
+                <p><strong>Brands:</strong> 
+                    <a href="#">Yakult</a> | <a href="#">My Muse</a> | <a href="#">Aashirvaad Atta</a> | 
+                    <a href="#">Too Yumm</a> | <a href="#">Lays</a> | <a href="#">Figaro Olive Oil</a> | 
+                    <a href="#">Nandini Milk</a> | <a href="#">Amul</a> | <a href="#">Mother Dairy Near Me</a> | 
+                    <a href="#">Fortune Oil</a>
+                </p>
+                <p><strong>Categories:</strong> 
+                    <a href="#">Grocery</a> | <a href="#">Curd</a> | <a href="#">Hukka flavour</a> | 
+                    <a href="#">Paan shop near me</a> | <a href="#">Eggs price</a> | <a href="#">Cheese slice</a> | 
+                    <a href="#">Fresh fruits</a> | <a href="#">Fresh vegetables</a> | <a href="#">Refined oil</a> | 
+                    <a href="#">Butter price</a> | <a href="#">Paneer price</a>
+                </p>
+            </div>
+
+            <hr>
+
+            <!-- Categories Section -->
+            <h6>Categories</h6>
+            <div class="categories">
+                <div class="row">
+                    <div class="col"><a href="#">Fruits & Vegetables</a></div>
+                    <div class="col"><a href="#">Atta, Rice, Oil & Dals</a></div>
+                    <div class="col"><a href="#">Masala & Dry Fruits</a></div>
+                    <div class="col"><a href="#">Sweet Cravings</a></div>
+                    <div class="col"><a href="#">Frozen Food & Ice Creams</a></div>
+                    <div class="col"><a href="#">Baby Food</a></div>
+                    <div class="col"><a href="#">Dairy, Bread & Eggs</a></div>
+                    <div class="col"><a href="#">Cold Drinks & Juices</a></div>
+                    <div class="col"><a href="#">Munchies</a></div>
+                    <div class="col"><a href="#">Meats, Fish & Eggs</a></div>
+                    <div class="col"><a href="#">Breakfast & Sauces</a></div>
+                    <div class="col"><a href="#">Tea, Coffee & More</a></div>
+                    <div class="col"><a href="#">Biscuits</a></div>
+                    <div class="col"><a href="#">Makeup & Beauty</a></div>
+                    <div class="col"><a href="#">Bath & Body</a></div>
+                    <div class="col"><a href="#">Cleaning Essentials</a></div>
+                    <div class="col"><a href="#">Home Needs</a></div>
+                    <div class="col"><a href="#">Electricals & Accessories</a></div>
+                    <div class="col"><a href="#">Hygiene & Grooming</a></div>
+                    <div class="col"><a href="#">Health & Baby Care</a></div>
+                    <div class="col"><a href="#">Homegrown Brands</a></div>
+                    <div class="col"><a href="#">Paan Corner</a></div>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <div class="footer-columns">
+                    <div class="footer-col">
+                        <h3>Zepto</h3>
+                        <div class="social-icons">
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        </div>
+                        <p>&copy; KiranaKart Technologies Private Limited</p>
+                    </div>
+                    <div class="footer-col">
+                        <a href="#">Home</a>
+                        <a href="#">Delivery Areas</a>
+                        <a href="#">Careers</a>
+                        <a href="#">Customer Support</a>
+                    </div>
+                    <div class="footer-col">
+                        <a href="#">Press</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Use</a>
+                        <a href="#">Responsible Disclosure Policy</a>
+                        <a href="#">Mojo - a Zepto Blog</a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </footer>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Webpack will inject the JS file here -->
+    <script src="bundle.js"></script>
+
+</body>
+
+</html>
