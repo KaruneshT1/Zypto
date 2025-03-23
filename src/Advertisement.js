@@ -1,5 +1,5 @@
 import React from 'react';
-import adImage from './assets/image/ad/dummy_adv.jpg'; // Import the advertisement image
+import adImage from './assets/image/ad/dummy_adv1.jpg'; // Import the advertisement image
 
 function Advertisement() {
   return (

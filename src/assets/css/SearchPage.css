@@ -1,0 +1,141 @@
+.advertisement img {
+  width: 83.5vw !important; /* Stretches to full screen width */
+  height: 80%; /* Maintain aspect ratio */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 14px !important;
+}
+
+.search-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px 18px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 30px auto 0 auto;
+}
+
+.image-container {
+  position: relative;
+  width: 230px;
+  height: 230px;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* Product Info with Shadow Veil */
+.product-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 8px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+  border-radius: 0 0 12px 12px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 13px;
+}
+
+/* Top row: Product Name & Discounted Price */
+.product-top {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  font-weight: 650;
+  padding: 0 8px;
+}
+
+/* Bottom row: Quantity & Striked Price */
+.product-bottom {
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+  font-weight: 300;
+  opacity: 0.9;
+  padding: 0 8px;
+}
+
+/* Striked text for actual price */
+.striked-price {
+  text-decoration: line-through;
+  opacity: 0.8;
+  font-size: 10px;
+}
+
+/* Cart button */
+.cart-button {
+  position: absolute;
+  top: 7px;
+  right: 7px;
+}
+
+/* Plus button */
+.plus-button {
+  width: 25px;
+  height: 25px;
+  border-radius: 8px;
+  background-color: black;
+  color: crimson;
+  border: none;
+  font-size: 25px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  line-height: 1;
+  padding-bottom: 6px;
+}
+
+/* Expanded cart */
+.expanded-cart {
+  display: flex;
+  align-items: center;
+  background-color: crimson;
+  color: white;
+  border-radius: 8px;
+  padding: 6px 8px;
+  height: 25px;
+  width: 75px;
+  justify-content: space-between;
+  transition: width 0.3s ease, padding 0.3s ease;
+}
+
+/* Minus and Plus buttons */
+.expanded-cart button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 18px;
+  width: 20px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+/* Number inside expanded cart */
+.expanded-cart span {
+  font-size: 16px;
+  font-weight: 600;
+  flex-grow: 1;
+  text-align: center;
+}

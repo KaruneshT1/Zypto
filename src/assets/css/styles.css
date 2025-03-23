@@ -43,6 +43,8 @@ body {
 
 /* Adjust spacing for the Login button */
 .login-btn {
+    font-size:14px;
+    font-family: 'Arial', sans-serif; /* Optional: Specify a font family */
     width: 55px;
     height: auto;
     margin-left: 15px; /* Adjust left spacing */
@@ -53,6 +55,8 @@ body {
 
 /* Adjust spacing for the Cart button */
 .cart-btn {
+    font-size:14px;
+    font-family: 'Arial', sans-serif; /* Optional: Specify a font family */
     width: 55px;
     margin-left: 10px; /* Adjust left spacing */
     margin-right: 10px; /* Adjust right spacing */
@@ -72,11 +76,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 225px; /* Adjust the height as needed */
+    height: 235px; /* Adjust the height as needed */
     margin: 20px auto; /* Automatically centers the advertisement section */
     padding: 0 20px; /* Adds horizontal padding (gap from left and right sides) */
-    max-width: 1200px; /* Restrict the width of the advertisement section (adjust as needed) */
-    border-radius: 10px; /* Rounded corners for the advertisement */
+    max-width: 2400px; /* Restrict the width of the advertisement section (adjust as needed) */
+    border-radius: 14px; /* Rounded corners for the advertisement */
     overflow: hidden; /* Ensures the content respects rounded corners */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional: Adds a soft shadow around the advertisement */
 }
@@ -85,7 +89,7 @@ body {
 .advertisement img {
     max-height: 100%;
     max-width: 100%;
-    object-fit: contain; /* Maintain aspect ratio */
+    object-fit: fit; /* Maintain aspect ratio */
     border-radius: 90px; /* Ensure the image inside the advertisement section is also rounded */
 }
 

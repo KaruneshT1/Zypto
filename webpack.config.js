@@ -4,7 +4,6 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   entry: {
     index: './src/index.js',  // Default entry point for the main app
-    search: './src/search.js', // Entry point for search.html
   },
   output: {
     path: path.resolve(__dirname, 'dist'),  // Output folder for production build
@@ -40,11 +39,6 @@ module.exports = {
       template: './public/index.html',  // Template for the default HTML file
       filename: 'index.html',  // Output file for the main app
       chunks: ['index'],  // Ensure only the necessary JS is included
-    }),
-    new HtmlWebpackPlugin({
-      template: './public/search.html',  // Template for the search HTML file
-      filename: 'search.html',  // Output file for search page
-      chunks: ['search'],  // Ensure only the necessary JS is included
     }),
   ],
   devServer: {

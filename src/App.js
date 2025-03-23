@@ -1,26 +1,16 @@
 // src/App.js
-import React from "react";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import Advertisement from './Advertisement'; 
-import ProductSection from './ProductSection';
-import SearchPage from './SearchPage'; // Import the new component
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import HomePage from './pages/HomePage'; // HomePage for the index page
+import SearchPage from './pages/SearchPage'; // SearchPage for /search
 
 function App() {
   return (
     <Router>
-      <div className="App">
-        <Advertisement />
-        <ProductSection />
-        <ProductSection />
-        <ProductSection />
-
-        {/* Add a Link or NavLink to navigate to the SearchPage */}
-        {/* <Link to="/search">Go to Search Page</Link> */}
-        {/* Define routes */}
-        <Routes>
-          <Route path="/search" element={<SearchPage />} />
-        </Routes>
-      </div>
+      <Routes>
+        <Route path="/" element={<HomePage />} /> {/* Home Page */}
+        <Route path="/search" element={<SearchPage />} /> {/* Search Page */}
+      </Routes>
     </Router>
   );
 }
