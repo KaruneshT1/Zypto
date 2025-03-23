@@ -14,7 +14,7 @@ const products = [
 
 function ProductSection() {
   // Dynamically import images
-  const importImages = require.context('./assets/image', true, /\.(jpg|jpeg|png|gif)$/);
+  const importImages = require.context('../assets/image', true, /\.(jpg|jpeg|png|gif)$/);
 
   return (
     <div id="product-sections">

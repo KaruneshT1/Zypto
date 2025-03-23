@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../assets/css/SearchPage.css";
-import Advertisement from "../Advertisement";
+import Advertisement from "../components/Advertisement";
 
 // Hardcoded image imports
 import img1 from "../assets/image/Search/img1.jpg";
