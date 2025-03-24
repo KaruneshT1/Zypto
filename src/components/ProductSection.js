@@ -1,4 +1,5 @@
 import React from 'react';
+import '../assets/css/ProductSection.css';
 
 // List of products, where images are stored in a specific directory
 const products = [

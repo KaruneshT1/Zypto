@@ -1,0 +1,90 @@
+.navbar-brand {
+    font-weight: bold;
+    color: #a325e2 ;
+}
+
+.navbar {
+    height: 90px; /* Adjust height as needed */
+}
+
+/* Adjust spacing for the Select Location button */
+.select-location-btn {
+    font-size: 13px;
+    font-weight: bold;
+    width: 140px;
+    margin-left: 15px; /* Adjust left spacing */
+    margin-right: 10px; /* Adjust right spacing */
+    margin-top: 5px; /* Adjust top spacing */
+    margin-bottom: 5px; /* Adjust bottom spacing */
+}
+
+
+
+
+/* Adjust spacing for the search bar */
+.search-bar {
+    width: 65%;
+    margin-left: 30px; /* Adjust left spacing */
+    margin-right: 10px; /* Adjust right spacing */
+    margin-top: 5px; /* Adjust top spacing */
+    margin-bottom: 5px; /* Adjust bottom spacing */
+}
+
+/* Adjust spacing for the Login button */
+.login-btn {
+    font-size:14px;
+    font-family: 'Arial', sans-serif; /* Optional: Specify a font family */
+    width: 55px;
+    height: auto;
+    margin-left: 15px; /* Adjust left spacing */
+    margin-right: 10px; /* Adjust right spacing */
+    margin-top: 5px; /* Adjust top spacing */
+    margin-bottom: 5px; /* Adjust bottom spacing */
+}
+
+/* Adjust spacing for the Cart button */
+.cart-btn {
+    font-size:14px;
+    font-family: 'Arial', sans-serif; /* Optional: Specify a font family */
+    width: 55px;
+    margin-left: 10px; /* Adjust left spacing */
+    margin-right: 10px; /* Adjust right spacing */
+    margin-top: 5px; /* Adjust top spacing */
+    margin-bottom: 5px; /* Adjust bottom spacing */
+}
+
+.navbar .btn {
+    border: none !important; /* Removes the border */
+    color: black !important; /* Sets the font color to black */
+    background-color: transparent; /* Keeps the background transparent */
+    margin: 0 10px;
+}
+
+/* Additional styling for the location dropdown button */
+.navbar .dropdown-toggle::after {
+    content: '\f107'; /* FontAwesome down arrow */
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    padding-left: 5px;
+}
+
+/* Style for the dropdown menu */
+#location-dropdown {
+    display: none;
+}
+
+.dropdown-menu {
+    position: absolute;
+    z-index: 1000;
+    display: none;
+    min-width: 10rem;
+}
+
+.dropdown-toggle:focus + .dropdown-menu {
+    display: block;
+}
+
+/* Adjust the modal */
+.modal-content {
+    border-radius: 10px;
+}
