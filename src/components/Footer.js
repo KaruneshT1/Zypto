@@ -75,7 +75,7 @@ function Footer() {
             <div className="footer-col">
               <Link to="#">Press</Link>
               <Link to="#">Privacy Policy</Link>
-              <Link to="#">Terms of Use</Link>
+              <Link to="/terms-and-conditions">Terms of Use</Link>
               <Link to="#">Responsible Disclosure Policy</Link>
               <Link to="#">Mojo - a Zypto Blog</Link>
             </div>

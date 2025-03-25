@@ -6,6 +6,8 @@ import HomePage from "../pages/HomePage"; // Import HomePage
 import SearchPage from "../pages/SearchPage"; // Import SearchPage
 import SignInPage from "../pages/SignInPage"; // Import SignInPage
 import SignUpPage from "../pages/SignUpPage"; // Import SignUpPage
+import TermsAndConditions from "../pages/TermsAndConditions"; // Import TermsAndConditions
+import FAQPage from "../pages/FAQPage"; // Import FAQPage
 
 const RoutesConfig = () => {
   return (
@@ -27,7 +29,23 @@ const RoutesConfig = () => {
           </MainLayout>
         } 
       />
-
+      <Route 
+        path="/terms-and-conditions" 
+        element={
+          <MainLayout>
+            <TermsAndConditions />
+          </MainLayout>
+        } 
+      />
+      <Route 
+        path="/faq" 
+        element={
+          <MainLayout>
+            <FAQPage />
+          </MainLayout>
+        } 
+      />
+      
       {/* Auth Layout Routes */}
       <Route 
         path="/sign-in" 
