@@ -1,124 +1,140 @@
 /* Container Styling */
 .terms-container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #4b0082; /* Darker Purple for Readability */
+  background-color: #f5ebfc; /* Light Purple Background */
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Styling */
+h1 {
+  font-size: 2.2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #a325e2; /* Brand Purple */
+}
+
+h2 {
+  font-size: 1.8em;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #a325e2; /* Brand Purple */
+}
+
+h3 {
+  font-size: 1.4em;
+  margin-top: 15px;
+  margin-bottom: 8px;
+  color: #4b0082; /* Darker Purple */
+}
+
+/* Paragraph Styling */
+p {
+  margin-bottom: 15px;
+  text-align: justify;
+  font-size: 1.1em;
+  color: #ffffff; /* Darker Purple */
+}
+
+/* List Styling */
+ul, ol {
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+
+li {
+  margin-bottom: 10px;
+  font-size: 1.1em;
+  color: #4b0082; /* Darker Purple */
+}
+
+li::before {
+  content: "✔️";
+  margin-right: 8px;
+  color: #a325e2; /* Brand Purple */
+}
+
+/* Link Styling */
+a {
+  color: #a325e2; /* Brand Purple */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Blockquote Styling */
+blockquote {
+  margin: 20px 0;
+  padding: 15px 20px;
+  background-color: #f1e6fc; /* Lighter Purple */
+  border-left: 5px solid #a325e2; /* Brand Purple */
+  font-style: italic;
+  color: #4b0082; /* Darker Purple */
+}
+
+/* Code Block Styling */
+pre {
+  background-color: #f4f4f4;
+  padding: 10px;
+  overflow: auto;
+  font-size: 0.9em;
+  border-radius: 5px;
+}
+
+code {
+  background-color: #f4f4f4;
+  padding: 2px 4px;
+  border-radius: 3px;
+  font-size: 0.9em;
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th, td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+  font-size: 1.1em;
+}
+
+th {
+  background-color: #e0c8fc; /* Light Purple */
+  color: #4b0082; /* Darker Purple */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .terms-container {
+    padding: 15px;
   }
-  
-  /* Header Styling */
+
   h1 {
-    font-size: 2em;
-    font-weight: bold;
-    margin-bottom: 10px;
-    text-align: center;
-    color: #2268DC;
+    font-size: 1.8em;
   }
-  
+
   h2 {
-    font-size: 1.5em;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    color: #009359;
+    font-size: 1.4em;
   }
-  
+
   h3 {
     font-size: 1.2em;
-    margin-top: 15px;
-    margin-bottom: 8px;
-    color: #333;
   }
-  
-  /* Paragraph Styling */
-  p {
-    margin-bottom: 15px;
-    text-align: justify;
+
+  p, li {
+    font-size: 1em;
   }
-  
-  /* List Styling */
-  ul, ol {
-    margin-left: 20px;
-    margin-bottom: 15px;
-  }
-  
-  li {
-    margin-bottom: 10px;
-  }
-  
-  /* Link Styling */
-  a {
-    color: #2268DC;
-    text-decoration: none;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Blockquote Styling */
-  blockquote {
-    margin: 20px 0;
-    padding: 10px 20px;
-    background-color: #f9f9f9;
-    border-left: 5px solid #ccc;
-    font-style: italic;
-  }
-  
-  /* Code Block Styling */
-  pre {
-    background-color: #f4f4f4;
-    padding: 10px;
-    overflow: auto;
-    font-size: 0.9em;
-    border-radius: 5px;
-  }
-  
-  code {
-    background-color: #f4f4f4;
-    padding: 2px 4px;
-    border-radius: 3px;
-    font-size: 0.9em;
-  }
-  
-  /* Table Styling */
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 20px;
-  }
-  
-  th, td {
-    padding: 10px;
-    border: 1px solid #ddd;
-    text-align: left;
-  }
-  
-  th {
-    background-color: #f4f4f4;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 600px) {
-    .terms-container {
-      padding: 15px;
-    }
-  
-    h1 {
-      font-size: 1.5em;
-    }
-  
-    h2 {
-      font-size: 1.2em;
-    }
-  
-    h3 {
-      font-size: 1em;
-    }
-  
-    p, li {
-      font-size: 0.9em;
-    }
-  }
-  
+}
