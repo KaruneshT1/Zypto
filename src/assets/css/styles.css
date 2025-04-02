@@ -1,8 +1,4 @@
 
-body {
-    padding-top: 80px; /* Prevent content overlap due to fixed navbar */
-}
-
 /* Adjust spacing for the logo */
 .logo {
     font-size: 2rem;

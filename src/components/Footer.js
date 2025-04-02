@@ -12,7 +12,7 @@ function Footer() {
         <h6>Popular Searches</h6>
         <div className="popular-searches">
           <p><strong>Products:</strong> 
-            <Link to="/product.html">Bottle gourd</Link> | <Link to="#">Lady finger</Link> | <Link to="#">Potato</Link> | 
+            <Link to="#">Bottle gourd</Link> | <Link to="#">Lady finger</Link> | <Link to="#">Potato</Link> | 
             <Link to="#">Lemon</Link> | <Link to="#">Dalchini</Link> | <Link to="#">Fennel seeds</Link> | 
             <Link to="#">Blueberry</Link> | <Link to="#">Papaya</Link> | <Link to="#">Dragon fruit</Link>
           </p>
@@ -67,8 +67,8 @@ function Footer() {
               <p>&copy; KiranaKart Technologies Private Limited</p>
             </div>
             <div className="footer-col">
-              <Link to="#">Home</Link>
-              <Link to="#">Delivery Areas</Link>
+              <Link to="/about-us">About Us</Link>
+              <Link to="/FAQ">FAQ</Link>
               <Link to="#">Careers</Link>
               <Link to="#">Customer Support</Link>
             </div>

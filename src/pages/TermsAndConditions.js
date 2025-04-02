@@ -11,11 +11,11 @@ const TermsAndCondition = () => {
       <section>
         <h2>1. Terms of Use</h2>
         <p>
-          1.1. The website [Your Website URL] (“Website”) and mobile application
-          [Your App Name] (App) (collectively referred to as the “Platform”) are
+          1.1. The website www.zypto.com (“Website”) and mobile application
+          Zypto (App) (collectively referred to as the “Platform”) are
           owned, operated, and managed by Zypto, a private limited company
           incorporated under the Indian Companies Act, 2013, with its registered
-          office at [Your Company Address].
+          office at Warangal.
         </p>
         <p>
           1.2. These terms of use (“Terms”) govern your use of the Platform. For

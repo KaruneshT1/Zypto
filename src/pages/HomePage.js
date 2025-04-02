@@ -8,8 +8,6 @@ function HomePage() {
     <div>
       <Advertisement />
       <ProductSection />
-      <ProductSection />
-      <ProductSection />
     </div>
   );
 }

@@ -22,7 +22,7 @@ const AboutUsPage = () => {
       <section className="about-section">
         <h2>Our Mission</h2>
         <p>
-          To redefine online shopping by providing **ultra-fast delivery** 
+          To redefine online shopping by providing <strong>ultra-fast delivery</strong>
           with a seamless experience, ensuring that your essentials are 
           just a tap away.
         </p>

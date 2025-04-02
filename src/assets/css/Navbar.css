@@ -1,6 +1,18 @@
+body {
+    padding-top: 80px; /* Prevent content overlap due to fixed navbar */
+}
+
+
 .navbar-brand {
     font-weight: bold;
     color: #a325e2 ;
+    text-decoration: none;
+}
+
+.navbar-brand:hover,
+.navbar-brand:focus {
+    color: #a325e2; /* Keep the same color on hover */
+    text-decoration: none; /* Ensure there's no underline on hover */
 }
 
 .navbar {
