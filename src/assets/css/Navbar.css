@@ -1,4 +1,6 @@
-body {
+
+
+.main-layout body {
     padding-top: 80px; /* Prevent content overlap due to fixed navbar */
 }
 
@@ -15,7 +17,7 @@ body {
     text-decoration: none; /* Ensure there's no underline on hover */
 }
 
-.navbar {
+.main-layout .navbar {
     height: 90px; /* Adjust height as needed */
 }
 
