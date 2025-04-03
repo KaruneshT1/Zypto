@@ -23,7 +23,8 @@
 /* Product carousel for scroll buttons */
 .product-carousel {
     position: relative;
-    overflow: hidden;
+    display: flex;
+    align-items: center;
     width: 100%;
 }
 
@@ -37,6 +38,7 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for the card */
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-right: 15px;
   }
   
   .card:hover {
@@ -157,9 +159,10 @@
 .scrollable-row {
     display: flex;
     flex-wrap: nowrap; /* Prevent wrapping to the next line */
-    overflow-x: auto; /* Enable horizontal scrolling */  
+    overflow-x: hidden; /* Enable horizontal scrolling */  
     gap: 16px;
     scroll-behavior: smooth;
+    width: 100%;
     padding-bottom: 10px; /* Optional: Space for scrollbar */
 }
 
@@ -175,3 +178,29 @@
 .scrollable-row::-webkit-scrollbar-track {
     background-color: #f1f1f1; /* Track background color */
 }
+
+.scroll-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    color: black;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    padding: 10px;
+    z-index: 10;
+    transition: opacity 0.3s ease;
+  }
+
+  .scroll-btn:hover {
+    opacity: 0.7;        /* Slightly transparent on hover */
+  }
+  
+  .scroll-btn.left {
+    left: 0;
+  }
+  
+  .scroll-btn.right {
+    right: 0;
+  }

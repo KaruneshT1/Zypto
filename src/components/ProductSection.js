@@ -52,6 +52,10 @@ function ProductSection() {
           <div key={catIndex} className="product-section">
             <h2>{category.category}</h2>
             <div className="product-carousel">
+
+              {/* Left Scroll Button */}
+              <button className="scroll-btn left" onClick={() => scroll("left")}>‹</button>
+
               <div className="product-row scrollable-row" ref={scrollRef}>
                 {category.items.map((item, index) => {
                   const imagePath = importImages(`./${item.image}`);
@@ -68,6 +72,9 @@ function ProductSection() {
                   );
                 })}
               </div>
+
+              {/* Right Scroll Button */}
+              <button className="scroll-btn right" onClick={() => scroll("right")}>›</button>
             </div>
           </div>
         );
