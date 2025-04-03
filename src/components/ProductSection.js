@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import '../assets/css/ProductSection.css';
 
 const products = [
@@ -38,15 +38,38 @@ function ProductSection() {
     <div id="product-sections">
       {products.map((category, catIndex) => {
         const scrollRef = useRef(null);
+        const [showLeftArrow, setShowLeftArrow] = useState(false);
+        const [showRightArrow, setShowRightArrow] = useState(true);
 
+        // Scroll Function
         const scroll = (direction) => {
+          const scrollAmount = window.innerWidth * 0.4; // Dynamic scrolling
           if (scrollRef.current) {
             scrollRef.current.scrollBy({
-              left: direction === "left" ? -300 : 300,
+              left: direction === "left" ? -scrollAmount : scrollAmount,
               behavior: "smooth",
             });
           }
         };
+
+        // Check Arrow Visibility
+        const checkArrows = () => {
+          if (scrollRef.current) {
+            const { scrollLeft, scrollWidth, clientWidth } = scrollRef.current;
+            setShowLeftArrow(scrollLeft > 0);
+            setShowRightArrow(scrollLeft < scrollWidth - clientWidth);
+          }
+        };
+
+        // Attach Scroll Event Listener
+        useEffect(() => {
+          const ref = scrollRef.current;
+          if (ref) {
+            ref.addEventListener("scroll", checkArrows);
+            checkArrows(); // Initial Check
+          }
+          return () => ref && ref.removeEventListener("scroll", checkArrows);
+        }, []);
 
         return (
           <div key={catIndex} className="product-section">
@@ -54,7 +77,9 @@ function ProductSection() {
             <div className="product-carousel">
 
               {/* Left Scroll Button */}
-              <button className="scroll-btn left" onClick={() => scroll("left")}>‹</button>
+              {showLeftArrow && (
+                <button className="scroll-btn left" onClick={() => scroll("left")}>‹</button>
+              )}
 
               <div className="product-row scrollable-row" ref={scrollRef}>
                 {category.items.map((item, index) => {
@@ -74,7 +99,9 @@ function ProductSection() {
               </div>
 
               {/* Right Scroll Button */}
-              <button className="scroll-btn right" onClick={() => scroll("right")}>›</button>
+              {showRightArrow && (
+                <button className="scroll-btn right" onClick={() => scroll("right")}>›</button>
+              )}
             </div>
           </div>
         );
