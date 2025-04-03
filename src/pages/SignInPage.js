@@ -8,16 +8,28 @@ const SignInPage = () => {
   const [error, setError] = useState('');
 
   const handleSubmit = (e) => {
-    e.preventDefault();
+    e.preventDefault(); // Prevent default HTML form validation
 
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!email) {
+      setError('Email is required.');
+      return;
+    }
 
     if (!emailRegex.test(email)) {
       setError('Please enter a valid email address.');
       return;
     }
 
+    if (!password) {
+      setError('Password is required.');
+      return;
+    }
+
     setError('');
+    console.log('Form submitted:', { email, password });
+    // Add further form submission logic here
   };
 
   return (
@@ -35,12 +47,11 @@ const SignInPage = () => {
             <div className="input-group">
               <label htmlFor="email">Email Address</label>
               <input
-                type="email"
+                type="text" // Changed from "email" to "text" to bypass HTML validation
                 id="email"
                 className="form-control"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                required
               />
             </div>
             <div className="input-group">
@@ -51,7 +62,6 @@ const SignInPage = () => {
                 className="form-control"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                required
               />
             </div>
             {error && <p className="error-message">{error}</p>}

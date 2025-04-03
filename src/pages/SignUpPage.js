@@ -49,7 +49,7 @@ const SignUpPage = () => {
 
   // Handle Form Submit
   const handleSubmit = (e) => {
-    e.preventDefault();
+    e.preventDefault(); // Prevent default HTML form validation
     if (Object.values(errors).some((err) => err) || Object.values(formData).some((val) => !val)) {
       alert("Please fix errors before submitting.");
       return;
@@ -66,12 +66,26 @@ const SignUpPage = () => {
           <div className="form-group-row">
             <div className="form-group">
               <label htmlFor="firstName">First Name</label>
-              <input type="text" id="firstName" name="firstName" className="form-control" value={formData.firstName} onChange={handleChange} required />
+              <input
+                type="text"
+                id="firstName"
+                name="firstName"
+                className="form-control"
+                value={formData.firstName}
+                onChange={handleChange}
+              />
               {errors.firstName && <p className="error">{errors.firstName}</p>}
             </div>
             <div className="form-group">
               <label htmlFor="lastName">Last Name</label>
-              <input type="text" id="lastName" name="lastName" className="form-control" value={formData.lastName} onChange={handleChange} required />
+              <input
+                type="text"
+                id="lastName"
+                name="lastName"
+                className="form-control"
+                value={formData.lastName}
+                onChange={handleChange}
+              />
               {errors.lastName && <p className="error">{errors.lastName}</p>}
             </div>
           </div>
@@ -79,28 +93,56 @@ const SignUpPage = () => {
           {/* Mobile */}
           <div className="form-group">
             <label htmlFor="mobile">Mobile</label>
-            <input type="text" id="mobile" name="mobile" className="form-control" value={formData.mobile} onChange={handleChange} required />
+            <input
+              type="text"
+              id="mobile"
+              name="mobile"
+              className="form-control"
+              value={formData.mobile}
+              onChange={handleChange}
+            />
             {errors.mobile && <p className="error">{errors.mobile}</p>}
           </div>
 
           {/* Email */}
           <div className="form-group">
             <label htmlFor="email">Email Address</label>
-            <input type="email" id="email" name="email" className="form-control" value={formData.email} onChange={handleChange} required />
+            <input
+              type="text" // Changed from "email" to "text" to bypass HTML validation
+              id="email"
+              name="email"
+              className="form-control"
+              value={formData.email}
+              onChange={handleChange}
+            />
             {errors.email && <p className="error">{errors.email}</p>}
           </div>
 
           {/* Password */}
           <div className="form-group">
             <label htmlFor="password">Password</label>
-            <input type="password" id="password" name="password" className="form-control" value={formData.password} onChange={handleChange} required />
+            <input
+              type="password"
+              id="password"
+              name="password"
+              className="form-control"
+              value={formData.password}
+              onChange={handleChange}
+            />
             {errors.password && <p className="error">{errors.password}</p>}
           </div>
 
           {/* Confirm Password */}
           <div className="form-group">
             <label htmlFor="confirmPassword">Confirm Password</label>
-            <input type="password" id="confirmPassword" name="confirmPassword" className="form-control" value={formData.confirmPassword} onChange={handleChange} required />
+            <input
+              type="password"
+              id="confirmPassword"
+              name="confirmPassword"
+              className="form-control"
+              value={formData.confirmPassword}
+              onChange={handleChange}
+            />
             {errors.confirmPassword && <p className="error">{errors.confirmPassword}</p>}
           </div>
 
