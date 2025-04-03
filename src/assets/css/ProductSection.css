@@ -20,82 +20,29 @@
     text-align: left;
 }
 
-/* Scrollable product row */
-.scrollable-row {
-    display: flex;
-    overflow-x: auto;
-    gap: 20px;
-    padding-bottom: 10px;
-    scrollbar-width: none; /* Hide default scrollbar */
-    scroll-behavior: smooth;
-    white-space: nowrap;
-}
-
-/* Hide scrollbar for Webkit (Chrome, Safari) */
-.scrollable-row::-webkit-scrollbar {
-    display: none;
-}
-
 /* Product carousel for scroll buttons */
 .product-carousel {
     position: relative;
+    overflow: hidden;
     width: 100%;
-    display: flex;
-    align-items: center;
-}
-
-/* Scroll buttons */
-.carousel-btn {
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    position: absolute;
-    z-index: 2;
-    font-size: 20px;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-}
-
-/* Positioning the scroll buttons */
-.carousel-btn.left {
-    left: 0;
-    transform: translateX(-50%);
-}
-
-
-.carousel-btn.right {
-    right: 0;
-    transform: translateX(50%);
 }
 
 /* Product card */
 .card {
-    flex: 0 0 auto;
+    flex: 0 0 auto; /* Prevent cards from shrinking */
     width: 250px;
-    min-width: 250px;
+    min-width: 250px; /* Ensures all cards have the same width */
     border: none;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for the card */
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-/* Hover effect */
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-}
-
-/* Image inside card */
-.card-img-top {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-    border-bottom: 1px solid #ddd;
-}
+  }
+  
+  .card:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+  }
 
 /* Card content */
 .card-body {
@@ -103,12 +50,6 @@
     text-align: center;
 }
 
-.card-body h5 {
-    font-size: 16px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    color: #333;
-}
 
 .card-body p {
     font-size: 14px;
@@ -135,53 +76,6 @@
     background-color: #0056b3;
 }
 
-
-/* Style for the category title */
-.product-section h2 {
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    color: #333;
-    align-self: flex-start;
-    width: 100%;
-    text-align: left;
-}
-
-/* Product row style for product cards */
-.product-row {
-    display: flex;
-    flex-wrap: wrap; /* Allow wrapping to the next line for small screens */
-    gap: 5px; /* Adjust this value to control the space between items */
-    padding: 5px; /* Padding between items */
-    width: 100%; /* Make sure the product row takes full width */
-}
-
-
-/* Card Styles */
-.card-img-top {
-    margin-left: 0 !important;
-    width: 75% !important; /* Adjust the width as needed (e.g., 80% of the card width) */
-    height: auto; /* Maintain the aspect ratio */
-    border: none; /* Remove border around the image */
-    border-radius: 10px; /* Add slight curve to the image corners */
-    object-fit: cover;
-}
-
-/* Product card */
-.card {
-    flex: 0 0 auto; /* Prevent cards from shrinking */
-    width: 250px;
-    min-width: 250px; /* Ensures all cards have the same width */
-    border: none;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for the card */
-    overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-
-.card-body {
-    padding: 15px;
-}
 
 .card-body h5 {
     font-size: 0.75rem; /* Reduce the font size */
@@ -212,6 +106,17 @@
     color: #333; /* Optional: Change the text color */
 }
 
+/* Card Styles */
+.card-img-top {
+    width: 75%; /* Ensure the image takes the full width of the card */
+    height: auto; /* Maintain the aspect ratio */
+    object-fit: cover; /* Ensure the image fits within the container */
+    border: none; /* Remove border around the image */
+    border-radius: 10px; /* Add slight curve to the image corners */
+    margin-left: 0 !important; /* Ensure no extra margin on the left */
+    border-bottom: 1px solid #ddd; /* Add a subtle border at the bottom */
+}
+
 /* Style for the product buttons */
 .card-body button {
     margin-left: 0 !important;
@@ -233,104 +138,40 @@
     transition: all 0.3s ease; /* Add a smooth transition for hover effects */
 }
 
+/* Product row style for product cards */
+.product-row {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping to the next line for small screens */
+    gap: 5px; /* Adjust this value to control the space between items */
+    padding: 5px; /* Padding between items */
+    width: 100%; /* Make sure the product row takes full width */
+}
+
 /* General styles for the product section */
 #product-sections {
   padding: 20px;
   background-color: #f9f9f9; /* Light background for the section */
 }
 
-/* Category title */
-.product-section h2 {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 20px;
-  color: #333;
-  text-align: left;
-}
-
 /* Scrollable product row */
 .scrollable-row {
     display: flex;
-    overflow-x: auto;
-    gap: 20px;
-    padding-bottom: 10px;
-    scrollbar-width: none; /* Hide default scrollbar */
+    flex-wrap: nowrap; /* Prevent wrapping to the next line */
+    overflow-x: auto; /* Enable horizontal scrolling */  
+    gap: 16px;
     scroll-behavior: smooth;
-    white-space: nowrap;
+    padding-bottom: 10px; /* Optional: Space for scrollbar */
 }
 
-
 .scrollable-row::-webkit-scrollbar {
-    display: none;
+    height: 8px;
 }
 
 .scrollable-row::-webkit-scrollbar-thumb {
-    background-color: #ccc; /* Color of the scrollbar */
-    border-radius: 10px; /* Rounded edges */
+    background-color: #888; /* Color of the scrollbar */
+    border-radius: 4px; /* Rounded edges */
 }
 
 .scrollable-row::-webkit-scrollbar-track {
     background-color: #f1f1f1; /* Track background color */
-}
-
-/* Product card */
-.card {
-  flex: 0 0 auto; /* Prevent cards from shrinking */
-  width: 250px;
-  border: none;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for the card */
-  overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card:hover {
-  transform: translateY(-5px); /* Slight lift on hover */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
-}
-
-/* Card image */
-.card-img-top {
-  width: 100%;
-  height: 150px;
-  object-fit: cover;
-  border-bottom: 1px solid #ddd;
-}
-
-/* Card body */
-.card-body {
-  padding: 15px;
-  text-align: center;
-}
-
-.card-body h5 {
-  font-size: 16px;
-  font-weight: bold;
-  margin-bottom: 10px;
-  color: #333;
-}
-
-.card-body p {
-  font-size: 14px;
-  color: #666;
-  margin-bottom: 10px;
-}
-
-.card-body p strong {
-  font-size: 16px;
-  color: #000;
-}
-
-/* Add to Cart button */
-.card-body .btn {
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
-
-.card-body .btn:hover {
-  background-color: #0056b3;
 }

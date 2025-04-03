@@ -8,6 +8,9 @@ const products = [
       { name: "Espresso Delight", price: "₹399", image: "coffee/coffee.jpg", desc: "450ml" },
       { name: "Latte Love", price: "₹349", image: "coffee/coldCoffee.jpg", desc: "350ml" },
       { name: "Cappuccino Craze", price: "₹299", image: "coffee/croiWithCoffee.jpg", desc: "250ml" },
+      { name: "Espresso Delight", price: "₹399", image: "coffee/coffee.jpg", desc: "450ml" },
+      { name: "Latte Love", price: "₹349", image: "coffee/coldCoffee.jpg", desc: "350ml" },
+      { name: "Cappuccino Craze", price: "₹299", image: "coffee/croiWithCoffee.jpg", desc: "250ml" },
     ],
   },
   {
