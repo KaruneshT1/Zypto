@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: linear-gradient(to right, #ff758c, #ff7eb3);
+  background: linear-gradient(to right, #6a11cb, #2575fc);
 }
 
 .signup-form {
@@ -77,4 +77,16 @@
 
 .signin-link a:hover {
   text-decoration: underline;
+}
+
+.error {
+  color: #ff4d4f; /* Red color for error text */
+  font-size: 0.9rem; /* Slightly smaller font size */
+  font-weight: bold; /* Make the text bold */
+  margin-top: 5px; /* Add some spacing above the message */
+  text-align: left; /* Align the message to the left */
+  background-color: #fff5f5; /* Light red background for emphasis */
+  padding: 8px; /* Add padding around the text */
+  border: 1px solid #ff4d4f; /* Add a border matching the text color */
+  border-radius: 5px; /* Rounded corners */
 }
