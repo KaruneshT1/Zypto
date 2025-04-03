@@ -1,8 +1,18 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import '../assets/css/Navbar.css';
 
 function Navbar() {
+  useEffect(() => {
+    // Add padding to the body when the Navbar is mounted
+    document.body.style.paddingTop = '80px';
+
+    // Cleanup function to remove the padding when the Navbar is unmounted
+    return () => {
+      document.body.style.paddingTop = '';
+    };
+  }, []);
+
   return (
     <>
       {/* Navbar */}
