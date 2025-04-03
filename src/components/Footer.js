@@ -2,6 +2,11 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import '../assets/css/Footer.css'; // Ensure you have a CSS file for styling
 
+import facebookIcon from '../assets/icons/facebook.svg';
+import instagramIcon from '../assets/icons/insta.svg';
+import twitterIcon from '../assets/icons/twitter.svg';
+import linkedinIcon from '../assets/icons/linkedin.svg';
+
 function Footer() {
   return (
     <footer className="footer">
@@ -59,12 +64,20 @@ function Footer() {
             <div className="footer-col">
               <h3>Zypto</h3>
               <div className="social-icons">
-                <a href="#"><i className="fa-brands fa-facebook"></i></a>
-                <a href="#"><i className="fa-brands fa-instagram"></i></a>
-                <a href="#"><i className="fa-brands fa-twitter"></i></a>
-                <a href="#"><i className="fa-brands fa-youtube"></i></a>
-              </div>
-              <p>&copy; KiranaKart Technologies Private Limited</p>
+                <a href="#">
+                  <img src={instagramIcon} alt="instagram" className="social-icon" />
+                </a>
+                <a href="#">
+                  <img src={twitterIcon} alt="Twitter" className="social-icon" />
+                </a>
+                <a href="#">
+                  <img src={facebookIcon} alt="Facebook" className="social-icon" />
+                </a>
+                <a href="#">
+                  <img src={linkedinIcon} alt="linkedin" className="social-icon" />
+                </a>
+            </div>
+            <p>&copy; KiranaKart Technologies Private Limited</p>
             </div>
             <div className="footer-col">
               <Link to="/about-us">About Us</Link>
