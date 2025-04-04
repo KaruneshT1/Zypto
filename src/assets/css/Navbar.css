@@ -5,13 +5,13 @@
 
 .navbar-brand {
     font-weight: bold;
-    color: #a325e2 ;
+    color: #1ABC9C ;
     text-decoration: none;
 }
 
 .navbar-brand:hover,
 .navbar-brand:focus {
-    color: #a325e2; /* Keep the same color on hover */
+    color: #1ABC9C; /* Keep the same color on hover */
     text-decoration: none; /* Ensure there's no underline on hover */
 }
 

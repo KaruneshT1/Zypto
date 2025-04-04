@@ -4,11 +4,11 @@
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: linear-gradient(to right, #6a11cb, #2575fc);
+  background: linear-gradient(to right, #1ABC9C, #A8E6CF);
 }
 
 .signup-form {
-  background: #fff;
+  background: #000000;
   padding: 2rem;
   border-radius: 10px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
@@ -50,7 +50,7 @@
 .btn-success {
   width: 100%;
   padding: 10px;
-  background-color: #ff758c;
+  background-color: #1ABC9C;
   color: white;
   border: none;
   border-radius: 5px;
@@ -60,7 +60,7 @@
 }
 
 .btn-success:hover {
-  background-color: #ff7eb3;
+  background-color: #16A085;
 }
 
 .signin-link {
@@ -70,7 +70,7 @@
 }
 
 .signin-link a {
-  color: #ff758c;
+  color: #1ABC9C;
   text-decoration: none;
   font-weight: bold;
 }

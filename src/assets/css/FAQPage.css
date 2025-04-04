@@ -11,7 +11,7 @@
   h1 {
     font-size: 2em;
     text-align: center;
-    color: #a325e2;
+    color: #1ABC9C;
     margin-bottom: 20px;
   }
   
@@ -29,7 +29,7 @@
   
   .search-icon {
     margin-right: 10px;
-    color: #a325e2;
+    color: #1ABC9C;
   }
   
   .faq-search input {
@@ -44,7 +44,7 @@
   .faq-category h2 {
     font-size: 1.5em;
     margin-bottom: 10px;
-    color: #a325e2;
+    color: #1ABC9C;
   }
   
   /* FAQ Items */

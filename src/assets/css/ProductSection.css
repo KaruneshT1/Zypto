@@ -14,7 +14,7 @@
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 10px;
-    color: #333;
+    color: var(--subheading-color);
     align-self: flex-start;
     width: 100%;
     text-align: left;
@@ -66,7 +66,7 @@
 
 /* Add to Cart button */
 .card-body .btn {
-    background-color: #007bff;
+    background-color: #1ABC9C;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -75,7 +75,7 @@
 }
 
 .card-body .btn:hover {
-    background-color: #0056b3;
+    background-color: #249b83;
 }
 
 
@@ -211,3 +211,19 @@
   .scroll-btn.right {
     right: 0;
   }
+
+  :root {
+    --subheading-color-light: #178D76;  /* Vibrant Teal variant */
+    --subheading-color-dark: #50C2A7;   /* Brighter for dark mode */
+  }
+  @media (prefers-color-scheme: light) {
+    :root {
+      --subheading-color: var(--subheading-color-light);
+    }
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --subheading-color: var(--subheading-color-dark);
+    }
+  }
+  

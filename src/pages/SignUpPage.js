@@ -147,7 +147,7 @@ const SignUpPage = () => {
           </div>
 
           {/* Submit Button */}
-          <button type="submit" className="btn btn-primary">Create Account</button>
+          <button type="submit" className="btn-success">Create Account</button>
         </form>
 
         {/* Already have an account? */}

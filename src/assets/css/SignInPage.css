@@ -7,7 +7,7 @@
 /* Left Side (2/3 Width) */
 .signin-left {
   flex: 2;  /* Takes 2/3 of screen width */
-  background: linear-gradient(to right, #6a11cb, #2575fc);
+  background: linear-gradient(to right, #1ABC9C, #A8E6CF);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,7 +22,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #f8f9fa;
+  background: #000000;
 }
 
 .signin-box {
@@ -72,7 +72,7 @@
 .signin-btn {
   width: 100%;
   padding: 10px;
-  background-color: #6a11cb;
+  background-color: #1ABC9C;
   color: white;
   border: none;
   border-radius: 5px;
@@ -82,7 +82,7 @@
 }
 
 .signin-btn:hover {
-  background-color: #2575fc;
+  background-color: #16A085;
 }
 
 .signup-link {
@@ -92,7 +92,7 @@
 }
 
 .signup-link a {
-  color: #6a11cb;
+  color: #1ABC9C;
   text-decoration: none;
   font-weight: bold;
 }
